@@ -1,0 +1,32 @@
+<template id="login-modal-template">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="/components/LoginModal/LoginModal.css">
+
+    <p class="login-modal-opener">Click here to login</p>
+    <div class="dark-shadow flex cover-screen login-modal-popup-background hidden">
+        <div class="flex login-modal-popup">
+                <h1 class="login-modal-header">Login to "Demo Shop"</h1>
+                <form class="flex login-modal-form">
+                    <div class="login-modal-login-wrapper flex">
+                        <div class="login-modal-label-wrapper flex">
+                            <label class="login-modal-label">Your Login:</label>
+                            <span class="login-modal-login-icon login-modal-login-icon-inactive"></span>
+                        </div>
+                        <input class="login-modal-login standart-input" required maxlength="10" minlength="3" type="text">
+                    </div>
+                    <div class="login-modal-password-wrapper flex">
+                        <div class="login-modal-label-wrapper flex">
+                            <label class="login-modal-label">Your Password:</label>
+                            <span class="login-modal-password-icon"></span>
+                        </div>
+                        <input class="login-modal-password standart-input" required minlength="5" type="password">
+                    </div>                    
+                    <div class="login-modal-submit-wrapper flex">
+                        <input class="login-modal-submit rectangle-button" type="submit" onclick="return false;" value="Submit">
+                    </div>
+                </form>     
+        </div>
+    </div>
+    
+</template>
+<script src="/components/LoginModal/LoginModal.js"></script>

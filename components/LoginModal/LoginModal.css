@@ -1,0 +1,118 @@
+.login-modal-opener{
+    font-size: 2em;
+    color: #000000;
+    cursor: default;
+}
+.login-modal-popup-background{
+    justify-content: center;
+    align-items: center;
+ }
+
+.login-modal-popup *{
+    cursor: default;
+}
+
+@media (max-width:480px){
+    .login-modal-popup{
+       border-radius: 0;
+       width:480px;
+    }     
+}
+@media (min-width:480px){
+    .login-modal-popup{
+       width:50%;
+    }    
+}
+.login-modal-popup{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.11);
+    border-radius: 15px;
+    border-color: #000000;
+    color: #000000;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.login-modal-header{
+    text-align: center;
+    background-color: #FFFFFF;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px;
+    font-size: 1.5em;
+    margin: 0;
+}
+.login-modal-form{
+    background-color: rgb(226, 222, 222);
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+}
+.login-modal-form input:focus{
+    outline: none;
+}
+.login-modal-form input:active{
+    outline: none;
+}
+.login-modal-label-wrapper{
+    font-weight: bold;
+    justify-content: space-between;
+    height: 40px;
+}
+.login-modal-label {
+    margin-top: 10px
+}
+.login-modal-login-icon{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    bottom: -40px; 
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+.login-modal-login-icon-inactive{
+    background-image: url(/images/login-inactive.svg);
+}
+.login-modal-login-icon-active{
+    background-image: url(/images/login-active.svg);
+}
+.login-modal-login-icon-invalid{
+    background-image: url(/images/login-invalid.svg) !important;
+}
+.login-modal-password-icon{
+    position: relative;
+    height: 32px;
+    width: 32px;
+    bottom: -44px;
+    left: -5px;
+    background-image: url(/images/password-inactive.svg);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+.login-modal-password-icon-inactive{
+    background-image: url(/images/password-inactive.svg);
+}
+.login-modal-password-icon-active{
+    background-image: url(/images/password-active.svg);
+}
+.login-modal-password-icon-invalid{
+    background-image: url(/images/password-invalid.svg) !important;
+}
+.login-modal-login-wrapper, .login-modal-password-wrapper{
+    flex-direction: column;
+    width:80%;
+}
+.login-modal-login, .login-modal-password {
+    padding-right: 36px;  
+}
+.login-modal-submit-wrapper{
+    justify-content: flex-end;
+    width: 80%;
+}
+.login-modal-submit {
+    width: 160px;
+    height: 32px;
+    font-size: 20px;   
+    margin-top: 15px;
+
+}
