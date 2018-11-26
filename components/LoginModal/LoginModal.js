@@ -41,7 +41,7 @@ class LoginModal extends HTMLElement {
       this.setLoginIconInvalid();
       e.stopPropagation();
     });
-    loginElem.addEventListener('keypress', e =>{
+    loginElem.addEventListener('keyup', e =>{
       this.setLoginIconInvalid();
     });
     loginElem.addEventListener('focus', e =>{
@@ -56,7 +56,7 @@ class LoginModal extends HTMLElement {
       this.setPasswordIconInvalid();
       e.stopPropagation();
     });
-    passwordElem.addEventListener('keypress', e =>{
+    passwordElem.addEventListener('keyup', e =>{
       this.setPasswordIconInvalid();
     });
     passwordElem.addEventListener('focus', e =>{
