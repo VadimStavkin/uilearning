@@ -13,15 +13,12 @@ html{
 }
 
 body{
+    display: flex;
     background-image:url('images/bg.jpg') ;
     font-family: PT Sans;
     color: #FFFFFF;
     flex-flow: column;
     height: 100%;
-}
-
-.flex{
-    display: flex;
 }
 .btn{
     cursor: pointer;
@@ -66,7 +63,7 @@ body{
     right: 0;
 }
 .hidden{
-    display: none;
+    display: none !important;
 }
 .dark-shadow{
     background-color: rgba(0, 0, 0, 0.70); 

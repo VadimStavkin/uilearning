@@ -5,8 +5,12 @@ header.main {
     width: 100%;  
 }
 header.main .center{
+    display: flex;
     flex-direction: row;
     justify-content: space-between;	 
+}
+header.main .user-wrapper{
+    display: flex;
 }
 header.main .user-block{
     display: inline-block;
@@ -36,6 +40,7 @@ header.main .user-block .text{
     vertical-align: middle;
     line-height: normal;
 }
+
 /* end header*/
 
 
