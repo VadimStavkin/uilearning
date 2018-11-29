@@ -1,3 +1,6 @@
+body{
+    justify-content: center;
+}
 .main{
     display: flex;
     height: 100%;

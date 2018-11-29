@@ -20,6 +20,8 @@ header.main .user-block{
 }
 header.main .btn.buy{
     margin-top: 5px;
+    cursor: pointer;
+    display: inline-block;
 }
 header.main .btn.buy img {
     height: 35px;
@@ -30,6 +32,8 @@ header.main .btn.logout img {
 header.main .btn.logout{
     margin-left: 5px;
     margin-top: 10px;
+    cursor: pointer;
+    display: inline-block;
 }
 header.main .username{
     font-style: italic;
@@ -45,8 +49,92 @@ header.main .user-block .text{
 
 
 /* content*/
+
+@media (max-width:600px){
+    div.content div.product-card {
+        flex-basis: 100%;
+    }
+}
 .content{
     height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow:1;
+}
+.content .product-card{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    flex-basis: 25%;
+    margin: 30px;
+    background: #FFFFFF url(/images/modal-bg.png) repeat;
+}
+.content .product-card {
+    color: #000000;
+}
+.content .image {
+    display: flex;
+    align-items: flex-end;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content .image.first{
+    background-image: url(/images/1.jpg);
+}
+.content .image.second{
+    background-image: url(/images/2.jpg);
+}
+.content .image.third{
+    background-image: url(/images/3.jpg);
+}
+.content .rating {
+    padding-left: 15px;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.70);    
+}
+.content .rating span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+}
+.content .rating span.active{
+    background-image:url(/images/star-active.svg);
+}
+.content .rating span.inactive{
+    background-image:url(/images/star-inactive.svg);
+}
+.content h1{
+    text-align: center;
+    border-bottom: #2A8676 2px solid;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right:15px;
+}
+.content .text-wrapper {
+    flex-grow: 1;
+    margin: 15px;
+    font-weight: bold;
+}
+.content .bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right:15px;
+    margin-bottom:15px;
+    font-weight: bold;
+}
+.content .bottom .price {
+    line-height: 40px;
+    font-size: 1.5em;
+}
+.content .bottom .dollar{
+    color: #2A8676;
+}
+.content .bottom button{
+    color: #FFFFFF;
 }
 /* end content*/
 
