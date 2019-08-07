@@ -75,7 +75,7 @@ body{
     height: 40px;
     padding: 0 10px;
     font-weight: bold;
-    cursor: text;
+    cursor: pointer;
     border-style:none;
 }
 .standart-input:focus{
